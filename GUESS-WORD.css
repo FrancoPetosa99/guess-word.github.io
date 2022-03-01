@@ -16,9 +16,32 @@ body{
     width: 100%;
     background-color: cornflowerblue;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+.container_indice{
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 100px;
+    align-items: center; 
+    gap: 5px;
+}
+.index{
+    font-size: 40px;
+    color: white;
+}
+.intro{
+    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 .board_game{
     width: 100%;
@@ -26,7 +49,7 @@ body{
     min-height: 450px;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 40px;
