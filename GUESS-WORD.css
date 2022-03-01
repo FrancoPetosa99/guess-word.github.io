@@ -21,7 +21,8 @@ body{
     padding-top: 100px;
 }
 .board_game{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     min-height: 450px;
     height: auto;
     display: flex;
@@ -104,6 +105,21 @@ body{
     opacity: 0;
     pointer-events: none;
 }
-@media (max-width: 600px) {
-    
+@media (max-width: 400px) {
+    .board_game{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input_word_hiden{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .word_hiden_container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
 } 
