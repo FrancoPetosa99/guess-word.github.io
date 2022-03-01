@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+.container{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+.board_game{
+    width: 600px;
+    min-height: 450px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.word_hiden_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.input_word_hiden{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 10px;
+    border: solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.options_container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.option{
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    font-size: 28px;
+    border-radius: 10px;
+    border: solid white 2px;
+    background-color: white;
+    cursor: pointer;
+}
+.option:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn_next,.btn_start{
+    width: 100%;
+    max-width: 120px;
+    height: 60px;
+    font-size: 28px;
+    border-radius: 10px;
+    border: solid white 2px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn_start:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn_next:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+.correct{
+    background-color: rgb(40, 172, 40);
+    color: white;
+}
+.incorrect{
+    background-color: rgb(212, 37, 37);
+    color: white;
+}
+.hide{
+    display: none;
+}
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+}
+@media (max-width: 600px) {
+    
+} 
